@@ -304,8 +304,8 @@ The algorithm predicts engagement probabilities. Content that naturally encourag
 - Videos need to be above a minimum duration to get VQV (Video Quality Views) weight
 - Visual content increases dwell time
 
-### 3. **Encourage Replies Over Likes**
-Based on typical industry weighting, replies often carry more weight than likes because they represent deeper engagement.
+### 3. **Encourage Diverse Engagement**
+The algorithm tracks multiple engagement types (likes, replies, reposts, quotes, shares). Content that generates varied engagement across multiple signals is valuable because it demonstrates genuine interest from your audience.
 
 ### 4. **Build Reply Threads**
 Thoughtful replies to your own posts create conversation, increasing overall engagement signals and dwell time.
@@ -417,20 +417,26 @@ Negative Engagement (You Want to Avoid)
 │ NEUTRAL     │ Scroll past (no engagement)
 ```
 
-### The Engagement Hierarchy
+### What We Know About Engagement Signals
 
-From the algorithm's perspective, engagement signals roughly rank:
+The algorithm tracks these distinct engagement types (the actual weights are not publicly available):
 
-1. **Follow** — User wants more of your content permanently
-2. **Share** — User thinks your content is worth spreading
-3. **Quote** — User engaged enough to add their own thoughts
-4. **Reply** — User engaged enough to respond
-5. **Repost** — User wants their followers to see it
-6. **Like** — User appreciated the content
-7. **Profile Click** — User curious about who you are
-8. **Click/Dwell** — User interested enough to spend time
+**Positive Signals:**
+- **Follow** — User wants more of your content permanently
+- **Share** — User thinks your content is worth spreading (via DM, copy link, etc.)
+- **Quote** — User engaged enough to add their own thoughts
+- **Reply** — User engaged enough to respond
+- **Repost** — User wants their followers to see it
+- **Like (Favorite)** — User appreciated the content
+- **Profile Click** — User curious about who you are
+- **Click/Dwell** — User interested enough to spend time
+- **Video View/Photo Expand** — User engaged with media
 
-The algorithm uses all of these to predict your relevance to each user, and weights them into a final score that determines your position in their feed.
+**Negative Signals:**
+- **Block/Mute/Report** — User found the content or author problematic
+- **Not Interested** — User explicitly indicated the content wasn't relevant
+
+The algorithm uses all of these to predict your relevance to each user, and applies configured weights to compute a final score. The specific weights are confidential and may be tuned based on business objectives.
 
 ---
 
